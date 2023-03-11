@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from "react-vant";
 import reactLogo from './assets/react.svg'
 import './App.css'
 
@@ -24,6 +25,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      <Button type="primary" round onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
